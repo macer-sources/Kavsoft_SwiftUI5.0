@@ -15,10 +15,15 @@ struct Home: View {
     @State private var createWeek: Bool = false
     @Namespace private var animation
     
+    
+    @State private var tasks:[Task] = sampleTasks.sorted(by: {$1.create > $0.create})
+    @State private var createNewTask: Bool = false
+    
     var body: some View {
         VStack(alignment: .leading,spacing: 0, content: {
             HeaderView()
             WeekSlider()
+            ContentView()
         })
         .vSpacing(.top)
         .onAppear {
@@ -33,6 +38,23 @@ struct Home: View {
                 }
             }
         }
+        .overlay(alignment: .bottomTrailing) {
+            Button(action: {createNewTask.toggle()}, label: {
+                Image(systemName: "plus")
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .frame(width: 55, height: 55)
+                    .background(.darkblue.shadow(.drop(color: .black.opacity(0.25), radius: 5, x: 10, y: 10)), in: .circle)
+            })
+            .padding(15)
+        }
+        .sheet(isPresented: $createNewTask, content: {
+            NewTask()
+                .presentationDetents([.height(300)])
+                .interactiveDismissDisabled()
+                .presentationCornerRadius(30)
+                .presentationBackground(.bg)
+        })
     }
     
     
@@ -175,6 +197,43 @@ struct Home: View {
     }
     
 }
+
+extension Home {
+    @ViewBuilder
+    func ContentView() -> some View {
+        ScrollView(.vertical) {
+            VStack {
+               TasksView()
+            }
+            .hSpacing(.center)
+            .vSpacing(.center)
+        }
+        .scrollIndicators(.hidden)
+    }
+    
+    @ViewBuilder
+    func TasksView() -> some View {
+        VStack(alignment: .leading,spacing: 35, content: {
+            ForEach($tasks) { $task in
+                TaskRowView(task: $task)
+                    // TODO: 点之间的🧵
+                    .background(alignment: .leading) {
+                        if tasks.last?.id != task.id {
+                            Rectangle()
+                                .frame(width: 1)
+                                .offset(x: 8)
+                                .padding(.bottom , -35)
+                        }
+                    }
+            }
+        })
+        .padding([.vertical, .leading], 15)
+        .padding(.top, 15)
+    }
+    
+}
+
+
 
 #Preview {
     ContentView()

@@ -17,6 +17,8 @@
 		ABE0B9AE2ACD8001002BC05B /* View+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B9AD2ACD8001002BC05B /* View+Exts.swift */; };
 		ABE0B9B02ACD800A002BC05B /* Date+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B9AF2ACD800A002BC05B /* Date+Exts.swift */; };
 		ABE0B9B32ACD8EBE002BC05B /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B9B22ACD8EBE002BC05B /* OffsetKey.swift */; };
+		ABE0B9B52ACD9234002BC05B /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B9B42ACD9234002BC05B /* TaskRowView.swift */; };
+		ABE0B9B72ACD976B002BC05B /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B9B62ACD976B002BC05B /* NewTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		ABE0B9AD2ACD8001002BC05B /* View+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Exts.swift"; sourceTree = "<group>"; };
 		ABE0B9AF2ACD800A002BC05B /* Date+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Exts.swift"; sourceTree = "<group>"; };
 		ABE0B9B22ACD8EBE002BC05B /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		ABE0B9B42ACD9234002BC05B /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
+		ABE0B9B62ACD976B002BC05B /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				ABE0B9A82ACD7DA6002BC05B /* Home.swift */,
+				ABE0B9B62ACD976B002BC05B /* NewTask.swift */,
 			);
 			path = page;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 		ABE0B9A72ACD7D9C002BC05B /* components */ = {
 			isa = PBXGroup;
 			children = (
+				ABE0B9B42ACD9234002BC05B /* TaskRowView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -196,11 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE0B9982ACD6D79002BC05B /* ContentView.swift in Sources */,
+				ABE0B9B52ACD9234002BC05B /* TaskRowView.swift in Sources */,
 				ABE0B99A2ACD6D79002BC05B /* Item.swift in Sources */,
 				ABE0B9B32ACD8EBE002BC05B /* OffsetKey.swift in Sources */,
 				ABE0B9AE2ACD8001002BC05B /* View+Exts.swift in Sources */,
 				ABE0B9AB2ACD7E4B002BC05B /* Task.swift in Sources */,
 				ABE0B9A92ACD7DA6002BC05B /* Home.swift in Sources */,
+				ABE0B9B72ACD976B002BC05B /* NewTask.swift in Sources */,
 				ABE0B9B02ACD800A002BC05B /* Date+Exts.swift in Sources */,
 				ABE0B9962ACD6D79002BC05B /* A_15_Task_Management_App_SwiftDataApp.swift in Sources */,
 			);
