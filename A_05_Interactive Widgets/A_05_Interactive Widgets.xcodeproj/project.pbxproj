@@ -19,6 +19,8 @@
 		ABE0B89B2ACD074F002BC05B /* WidgetExtensionsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ABE0B88B2ACD074E002BC05B /* WidgetExtensionsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ABE0B8A12ACD080A002BC05B /* DaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B8A02ACD080A002BC05B /* DaskModel.swift */; };
 		ABE0B8A22ACD080A002BC05B /* DaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B8A02ACD080A002BC05B /* DaskModel.swift */; };
+		ABE0B8A42ACD0ABE002BC05B /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B8A32ACD0ABE002BC05B /* ToggleStateIntent.swift */; };
+		ABE0B8A52ACD0ABE002BC05B /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B8A32ACD0ABE002BC05B /* ToggleStateIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		ABE0B8962ACD074F002BC05B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE0B8982ACD074F002BC05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABE0B8A02ACD080A002BC05B /* DaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaskModel.swift; sourceTree = "<group>"; };
+		ABE0B8A32ACD0ABE002BC05B /* ToggleStateIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStateIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		ABE0B86D2ACD0709002BC05B = {
 			isa = PBXGroup;
 			children = (
+				ABE0B8A32ACD0ABE002BC05B /* ToggleStateIntent.swift */,
 				ABE0B8A02ACD080A002BC05B /* DaskModel.swift */,
 				ABE0B8782ACD0709002BC05B /* A_05_Interactive Widgets */,
 				ABE0B8912ACD074E002BC05B /* WidgetExtensions */,
@@ -244,6 +248,7 @@
 				ABE0B87C2ACD0709002BC05B /* ContentView.swift in Sources */,
 				ABE0B8A12ACD080A002BC05B /* DaskModel.swift in Sources */,
 				ABE0B87A2ACD0709002BC05B /* A_05_Interactive_WidgetsApp.swift in Sources */,
+				ABE0B8A42ACD0ABE002BC05B /* ToggleStateIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +259,7 @@
 				ABE0B8932ACD074E002BC05B /* WidgetExtensionsBundle.swift in Sources */,
 				ABE0B8A22ACD080A002BC05B /* DaskModel.swift in Sources */,
 				ABE0B8952ACD074E002BC05B /* WidgetExtensions.swift in Sources */,
+				ABE0B8A52ACD0ABE002BC05B /* ToggleStateIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

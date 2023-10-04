@@ -51,8 +51,11 @@ struct WidgetExtensionsEntryView : View {
                     }else {
                         ForEach(entry.lastThreeTask) {task in
                             HStack(spacing: 6, content: {
-                                Image(systemName: task.isCpmpleted ? "checkmark.circle.fill": "circle")
-                                    .foregroundColor(.blue)
+                                Button(intent: ToggleStateIntent(id: task.id)) {
+                                    Image(systemName: task.isCpmpleted ? "checkmark.circle.fill": "circle")
+                                        .foregroundColor(.blue)
+                                }
+                                .buttonStyle(.plain)
                                 VStack(alignment: .leading, spacing: 4, content: {
                                     Text(task.taskTitle)
                                         .textScale(.secondary)
