@@ -19,6 +19,7 @@ enum GraphType: String, CaseIterable {
 struct Home: View {
     @State private var graphType: GraphType = .donut
     @State private var barSelection: String?
+    @State private var pieSlection: Double?
     
     var body: some View {
         VStack(content: {
@@ -32,18 +33,58 @@ struct Home: View {
             .labelsHidden()
             .pickerStyle(.segmented)
             
-            if let highestDownloads = appDownloads.max(by: {$0.downloads > $1.downloads}) {
-                CharPopOverView(downloads: highestDownloads.downloads, month: highestDownloads.month , isTitleView: true)
-                    .padding(.vertical)
-                    .opacity(barSelection == nil ? 1 : 0)
-            }
+            ZStack(content: {
+                if let highestDownloads = appDownloads.max(by: {$0.downloads > $1.downloads}) {
+                    if graphType == .bar {
+                        CharPopOverView(downloads: highestDownloads.downloads, month: highestDownloads.month , isTitleView: true)
+                            .padding(.vertical)
+                            .opacity(barSelection == nil ? 1 : 0)
+                    }else {
+                        if let barSelection, let selctedDownloads = appDownloads.findDownloads(barSelection) {
+                            CharPopOverView(downloads: selctedDownloads, month: barSelection, isTitleView: true)
+                        }else {
+                            CharPopOverView(downloads: highestDownloads.downloads, month: highestDownloads.month , isTitleView: true)
+                        }
+                    }
+                }
+            })
+            .padding(.vertical)
             
-            ChartView(graphType: $graphType, barSelection: $barSelection)
+            ChartView(graphType: $graphType, barSelection: $barSelection, pieSlection: $pieSlection)
             
             Spacer(minLength: 0)
         })
         .padding()
+        .onChange(of: pieSlection,initial: false) { oldValue, newValue in
+            if let newValue {
+                findDownload(newValue)
+            }else {
+                barSelection = nil
+            }
+        }
     }
+    
+    
+    
+    func findDownload(_ rangeValue: Double) {
+        // converting download model into array of tuples
+        var initalValue: Double = 0.0
+        let converteArray = appDownloads.compactMap { download -> (String, Range<Double>) in
+            let rangeEnd = initalValue + download.downloads
+            let tuple = (download.month , initalValue..<rangeEnd)
+            initalValue = rangeEnd
+            return tuple
+        }
+        
+        // new finding the value lies in the range
+        if let download = converteArray.first(where: {$0.1.contains(rangeValue)}) {
+            // updating selection
+            barSelection = download.0
+        }
+        
+    }
+    
+    
 }
 
 
@@ -51,6 +92,7 @@ struct ChartView : View {
     @Binding var graphType: GraphType
     // chart Selection
     @Binding var barSelection: String?
+    @Binding var pieSlection: Double?
     var body: some View {
         Chart {
             ForEach(appDownloads) {download in
@@ -68,6 +110,7 @@ struct ChartView : View {
                                angularInset: graphType == .donut ? 4 : 1)
                         .cornerRadius(8)
                         .foregroundStyle(by: .value("Month", download.month))
+                        .opacity(barSelection == nil ? 1 : (barSelection == download.month ? 1 : 0.4))
                     
                 }
             }
@@ -92,6 +135,7 @@ struct ChartView : View {
         // adding animation
         .animation(.snappy, value: graphType)
         .chartXSelection(value: $barSelection)
+        .chartAngleSelection(value: $pieSlection)
     }
 }
 
