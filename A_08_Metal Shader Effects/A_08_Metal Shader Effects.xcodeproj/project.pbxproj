@@ -11,6 +11,7 @@
 		ABE0B8F22ACD4384002BC05B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B8F12ACD4384002BC05B /* ContentView.swift */; };
 		ABE0B8F42ACD4385002BC05B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0B8F32ACD4385002BC05B /* Assets.xcassets */; };
 		ABE0B8F72ACD4385002BC05B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0B8F62ACD4385002BC05B /* Preview Assets.xcassets */; };
+		ABE0B8FE2ACD448B002BC05B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = ABE0B8FD2ACD448B002BC05B /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		ABE0B8F12ACD4384002BC05B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ABE0B8F32ACD4385002BC05B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE0B8F62ACD4385002BC05B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABE0B8FD2ACD448B002BC05B /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; name = Shaders.metal; path = "A_08_Metal Shader Effects/Shaders.metal"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 		ABE0B8E32ACD4384002BC05B = {
 			isa = PBXGroup;
 			children = (
+				ABE0B8FD2ACD448B002BC05B /* Shaders.metal */,
 				ABE0B8EE2ACD4384002BC05B /* A_08_Metal Shader Effects */,
 				ABE0B8ED2ACD4384002BC05B /* Products */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE0B8FE2ACD448B002BC05B /* Shaders.metal in Sources */,
 				ABE0B8F22ACD4384002BC05B /* ContentView.swift in Sources */,
 				ABE0B8F02ACD4384002BC05B /* A_08_Metal_Shader_EffectsApp.swift in Sources */,
 			);
