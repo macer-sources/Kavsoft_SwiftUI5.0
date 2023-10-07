@@ -8,28 +8,38 @@
 import SwiftUI
 
 struct Home: View {
+    @Binding var selectedProfile: Profile?
+    @Binding var pushView: Bool
     var body: some View {
         List(profiles) { profile in
-            HStack(spacing: 15, content: {
-                Color.clear
-                    .frame(width: 60, height: 60)
-                    .anchorPreference(key: MAnchorKey.self, value: .bounds, transform: { anchor in
-                        return [profile.id : anchor]
-                    })
+            Button(action: {
+                selectedProfile = profile
+                pushView.toggle()
                 
-                VStack(alignment: .leading, spacing: 2, content: {
-                    Text(profile.name)
-                        .fontWeight(.semibold)
-                    Text(profile.lastMsg)
-                        .font(.callout)
-                        .textScale(.secondary)
+            }, label: {
+                HStack(spacing: 15, content: {
+                    Color.clear
+                        .frame(width: 60, height: 60)
+                        .anchorPreference(key: MAnchorKey.self, value: .bounds, transform: { anchor in
+                            return [profile.id : anchor]
+                        })
+                    
+                    VStack(alignment: .leading, spacing: 2, content: {
+                        Text(profile.name)
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.black)
+                        Text(profile.lastMsg)
+                            .font(.callout)
+                            .textScale(.secondary)
+                            .foregroundStyle(.gray)
+                    })
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    
+                    Text(profile.lastActive)
+                        .font(.caption)
                         .foregroundStyle(.gray)
                 })
-                .frame(maxWidth: .infinity, alignment: .leading)
-                
-                Text(profile.lastActive)
-                    .font(.caption)
-                    .foregroundStyle(.gray)
+                .contentShape(.rect)
             })
         }
         .overlayPreferenceValue(MAnchorKey.self, { value in
@@ -46,6 +56,24 @@ struct Home: View {
         })
     }
 }
+
+struct DetailView: View {
+    var profile: Profile
+    var body: some View {
+        VStack {
+            GeometryReader(content: { geometry in
+                let size = geometry.size
+                ImageView(profile: profile, size: size)
+            })
+            .frame(height: 400)
+            .ignoresSafeArea()
+            
+            Spacer(minLength: 0)
+        }
+    }
+}
+
+
 
 struct ImageView: View {
     var profile: Profile
