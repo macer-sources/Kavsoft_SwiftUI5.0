@@ -134,6 +134,7 @@ extension Home {
                                         .frame(width: 5, height: 5)
                                         .opacity(Calendar.current.isDate(day.date
                                                                          , inSameDayAs: selectedDate) ? 1 : 0)
+                                        .offset(y: progress * -2)
                                 })
                                 .contentShape(.rect)
                                 .onTapGesture {
@@ -143,6 +144,7 @@ extension Home {
                         }
                     })
                     .frame(height: calendarGridHeight)
+                    .offset(y: (monthProgress * -50) * progress)
                     .clipped()
                     
     //                .background(.blue)
@@ -163,8 +165,8 @@ extension Home {
             .background(.red.gradient)
             // sticking it to top
             .clipped()
-            .offset(y: -minY)
             .contentShape(.rect)
+            .offset(y: -minY)
             
         })
         .frame(height: calendarHeight)
@@ -197,6 +199,13 @@ extension Home {
         return calendarTitleViewHeight + weekLabelHeight + safeArea.top + topPadding + bottomPadding +  calendarGridHeight
     }
     
+    var monthProgress: CGFloat {
+        let calendar = Calendar.current
+        if let index = selectedMonthDates.firstIndex(where: {calendar.isDate($0.date, inSameDayAs: selectedDate)}) {
+            return CGFloat(index / 7).rounded()
+        }
+        return 1.0
+    }
     
     var currentMonth: String {
         return format("MMMM")
