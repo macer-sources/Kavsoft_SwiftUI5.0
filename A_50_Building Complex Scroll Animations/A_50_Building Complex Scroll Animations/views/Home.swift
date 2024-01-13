@@ -13,6 +13,7 @@ struct Home: View {
     @State private var selectedMonth: Date = .currentMonth
     @State private var selectedDate: Date = .now
     var body: some View {
+        let maxHeight = calendarHeight - (calendarTitleViewHeight + weekLabelHeight + safeArea.top + 50 + topPadding + bottomPadding - 50)
         ScrollView(.vertical) {
             VStack(spacing: 0, content: {
                 
@@ -27,6 +28,7 @@ struct Home: View {
             })
         }
         .scrollIndicators(.hidden)
+        .scrollTargetBehavior(CustomScrollBehaviour(maxHeight: maxHeight))
     }
 }
 
@@ -143,10 +145,10 @@ extension Home {
                                 }
                         }
                     })
-                    .frame(height: calendarGridHeight)
+                    .frame(height: calendarGridHeight - ((calendarGridHeight - 50) * progress), alignment: .top)
                     .offset(y: (monthProgress * -50) * progress)
+                    .contentShape(.rect)
                     .clipped()
-                    
     //                .background(.blue)
                     
                 })
@@ -232,7 +234,11 @@ extension Home {
         guard let month = calendar.date(byAdding: .month, value: increment ? 1 : -1, to: selectedMonth) else {
             return
         }
+        guard let date = calendar.date(byAdding: .month, value: increment ? 1 : -1, to: selectedDate) else {
+            return
+        }
         selectedMonth = month
+        selectedDate = date
     }
     
 }
@@ -302,6 +308,17 @@ struct Day: Identifiable {
     var date: Date
     // previouse/next month excess dates(上个月和下个月的忽略掉)
     var ignored: Bool = false
+}
+
+
+// custom scroll behaviour
+struct CustomScrollBehaviour: ScrollTargetBehavior {
+    var maxHeight: CGFloat
+    func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
+        if target.rect.minY < maxHeight {
+            target.rect = .zero
+        }
+    }
 }
 
 
