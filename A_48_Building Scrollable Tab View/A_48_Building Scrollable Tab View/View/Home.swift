@@ -39,23 +39,35 @@ struct Home: View {
             CustomTabBar()
             
             // paging view using new ios 17 APIS
-            ScrollView(.horizontal) {
-                LazyHStack(spacing: 0, content: {
-                    SampleView(.purple)
-                        .id(Tab.chats)
-                        .containerRelativeFrame(.horizontal)
-                    SampleView(.red)
-                        .id(Tab.calls)
-                        .containerRelativeFrame(.horizontal)
-                    SampleView(.blue)
-                        .id(Tab.settings)
-                        .containerRelativeFrame(.horizontal)
-                })
-            }
-            .scrollPosition(id: $selectedTab)
-            .scrollIndicators(.hidden)
-            .scrollTargetBehavior(.paging)
-            .scrollClipDisabled()
+            GeometryReader(content: { geometry in
+                let size = geometry.size
+                
+                ScrollView(.horizontal) {
+                    LazyHStack(spacing: 0, content: {
+                        SampleView(.purple)
+                            .id(Tab.chats)
+                            .containerRelativeFrame(.horizontal)
+                        SampleView(.red)
+                            .id(Tab.calls)
+                            .containerRelativeFrame(.horizontal)
+                        SampleView(.blue)
+                            .id(Tab.settings)
+                            .containerRelativeFrame(.horizontal)
+                    })
+                    .scrollTargetLayout()
+                    // TODO: 根据偏移量，决定选中那个tab 的
+                    .offsetX { value in
+                        // converting offset into progress
+                        let progress = -value / (size.width * CGFloat(Tab.allCases.count - 1))
+                        // capping progress BTW 0-1
+                        tabProgress = max(min(progress, 1), 0 )
+                    }
+                }
+                .scrollPosition(id: $selectedTab)
+                .scrollIndicators(.hidden)
+                .scrollTargetBehavior(.paging)
+                .scrollClipDisabled()
+            })
             
         })
         .frame(maxWidth: .infinity)
@@ -86,7 +98,9 @@ extension Home {
                 }
             }
         })
+        .tabMask(tabProgress)
         // scollable active tab indicator
+        // TODO: 根据偏移量，实现 类似 animat 的效果
         .background {
             GeometryReader(content: { geometry in
                 let size = geometry.size
