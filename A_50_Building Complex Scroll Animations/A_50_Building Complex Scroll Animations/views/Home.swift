@@ -65,73 +65,98 @@ extension Home {
 extension Home {
     @ViewBuilder
     func CalenderView() -> some View {
-        VStack(alignment:.leading, spacing: 0) {
-            Text(currentMonth)
-                .font(.system(size: 35))
-                .frame(maxHeight: .infinity, alignment: .bottom)
-                .overlay(alignment: .topLeading, content: {
-                    GeometryReader(content: { geometry in
-                        let size = geometry.size
-                        
-                        Text(currentYear)
-                            .font(.system(size: 25))
-                    })
-                })
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .overlay(alignment: .topTrailing, content: {
-                    HStack(spacing: 15, content: {
-                        Button("", systemImage: "chevron.left") {
-                            // update to previous month
-                            monthUpdate(false)
-                        }
-                        .contentShape(.rect)
-                        Button("", systemImage: "chevron.right") {
-                            // update to next month
-                            monthUpdate(true)
-                        }
-                        .contentShape(.rect)
-                    })
-                    .foregroundStyle(.primary)
-                })
-                .frame(height: calendarTitleViewHeight)
+        GeometryReader(content: { geometry in
+            let size = geometry.size
+            let minY = geometry.frame(in: .scrollView(axis: .vertical)).minY
             
-            // TODO Day labels
-            VStack(spacing: 0, content: {
-                HStack(spacing: 0, content: {
-                    ForEach(Calendar.current.weekdaySymbols, id: \.self) { symbol in
-                        Text(symbol.prefix(3))
-                            .font(.caption)
-                            .frame(maxWidth: .infinity)
-                            .foregroundStyle(.secondary)
-                    }
-                })
-                .frame(height: weekLabelHeight, alignment: .bottom)
-                
-                
-                // Calendar Grid View
-                LazyVGrid(columns: Array.init(repeating: GridItem(spacing: 0), count: 7),spacing: 0, content: {
-                    ForEach(selectedMonthDates) { day in
-                        Text(day.shortSymbol)
-                            .foregroundStyle(day.ignored ? .secondary : .primary)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 50)
+            // converting scroll into progress
+            let maxHeight = size.height - (calendarTitleViewHeight + weekLabelHeight + safeArea.top + 50 + topPadding + bottomPadding)
+            let progress = max(min((-minY / maxHeight), 1), 0)
+            
+            
+            VStack(alignment:.leading, spacing: 0) {
+                Text(currentMonth)
+                    .font(.system(size: 35 - (10 * progress)))
+                    .offset(y: -50 * progress)
+                    .frame(maxHeight: .infinity, alignment: .bottom)
+                    .overlay(alignment: .topLeading, content: {
+                        GeometryReader(content: { geometry in
+                            let size = geometry.size
+                            
+                            Text(currentYear)
+                                .font(.system(size: 25 - (10 * progress)))
+                                .offset(x: size.width * progress, y : 3 * progress)
+                        })
+                    })
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .overlay(alignment: .topTrailing, content: {
+                        HStack(spacing: 15, content: {
+                            Button("", systemImage: "chevron.left") {
+                                // update to previous month
+                                monthUpdate(false)
+                            }
                             .contentShape(.rect)
-                    }
-                })
-                .frame(height: calendarGridHeight)
-//                .background(.blue)
+                            Button("", systemImage: "chevron.right") {
+                                // update to next month
+                                monthUpdate(true)
+                            }
+                            .contentShape(.rect)
+                        })
+                        .font(.title3)
+                        .foregroundStyle(.primary)
+                        .offset(x: 150 * progress)
+                    })
+                    .frame(height: calendarTitleViewHeight)
                 
-            })
+                // TODO Day labels
+                VStack(spacing: 0, content: {
+                    HStack(spacing: 0, content: {
+                        ForEach(Calendar.current.weekdaySymbols, id: \.self) { symbol in
+                            Text(symbol.prefix(3))
+                                .font(.caption)
+                                .frame(maxWidth: .infinity)
+                                .foregroundStyle(.secondary)
+                        }
+                    })
+                    .frame(height: weekLabelHeight, alignment: .bottom)
+                    
+                    
+                    // Calendar Grid View
+                    LazyVGrid(columns: Array.init(repeating: GridItem(spacing: 0), count: 7),spacing: 0, content: {
+                        ForEach(selectedMonthDates) { day in
+                            Text(day.shortSymbol)
+                                .foregroundStyle(day.ignored ? .secondary : .primary)
+                                .frame(maxWidth: .infinity)
+                                .frame(height: 50)
+                                .contentShape(.rect)
+                        }
+                    })
+                    .frame(height: calendarGridHeight)
+                    .clipped()
+                    
+    //                .background(.blue)
+                    
+                })
+                
+                
+                
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal, horizontalPadding)
+            .padding(.top, topPadding)
+            .padding(.bottom, bottomPadding)
+            .padding(.top, safeArea.top)
+            .frame(maxHeight: .infinity)
+            .frame(height: size.height - (maxHeight * progress), alignment: .top)
+            .background(.red.gradient)
+            // sticking it to top
+            .clipped()
+            .offset(y: -minY)
+            .contentShape(.rect)
             
-            
-            
-        }
-        .foregroundStyle(.white)
-        .padding(.horizontal, horizontalPadding)
-        .padding(.top, topPadding)
-        .padding(.bottom, bottomPadding)
-        .padding(.top, safeArea.top)
-        .background(.red.gradient)
+        })
+        .frame(height: calendarHeight)
+        .zIndex(1000)
         
     }
      
@@ -155,6 +180,9 @@ extension Home {
     
     var calendarGridHeight: CGFloat {
         return CGFloat(selectedMonthDates.count / 7) * 50
+    }
+    var calendarHeight: CGFloat {
+        return calendarTitleViewHeight + weekLabelHeight + safeArea.top + topPadding + bottomPadding +  calendarGridHeight
     }
     
     
