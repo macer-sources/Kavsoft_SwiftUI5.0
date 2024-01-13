@@ -19,6 +19,8 @@ struct DropDownView: View {
     
     @State private var showOptions: Bool = false
     @Environment(\.colorScheme) private var scheme
+    @SceneStorage("drop_down_zindex") private var index = 1000.0
+    @State private var zIndex = 1000.0
     var body: some View {
         GeometryReader(content: { geometry in
             let size = geometry.size
@@ -47,6 +49,8 @@ struct DropDownView: View {
                 .background(scheme == .dark ? .black : .white)
                 .contentShape(.rect)
                 .onTapGesture {
+                    index += 1
+                    zIndex = index
                     withAnimation(.snappy) {
                         showOptions.toggle()
                     }
@@ -59,6 +63,8 @@ struct DropDownView: View {
                 
             })
             .clipped()
+            // clips all interaction within it's bounds
+            .contentShape(.rect)
             .background (
                 (scheme == .dark ? Color.black : Color.white)
                     .shadow(.drop(color: .primary.opacity(0.15), radius: 4)),
@@ -67,7 +73,7 @@ struct DropDownView: View {
             .frame(height: size.height, alignment: anchor == .top ? .bottom : .top)
         })
         .frame(width: maxWidth, height: 50)
-        .zIndex(1000)
+        .zIndex(zIndex)
     }
     
     
