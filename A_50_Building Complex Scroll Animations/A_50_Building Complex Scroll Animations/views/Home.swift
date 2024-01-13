@@ -11,7 +11,7 @@ struct Home: View {
     var safeArea: EdgeInsets
     
     @State private var selectedMonth: Date = .currentMonth
-    
+    @State private var selectedDate: Date = .now
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing: 0, content: {
@@ -70,7 +70,7 @@ extension Home {
             let minY = geometry.frame(in: .scrollView(axis: .vertical)).minY
             
             // converting scroll into progress
-            let maxHeight = size.height - (calendarTitleViewHeight + weekLabelHeight + safeArea.top + 50 + topPadding + bottomPadding)
+            let maxHeight = size.height - (calendarTitleViewHeight + weekLabelHeight + safeArea.top + 50 + topPadding + bottomPadding - 50)
             let progress = max(min((-minY / maxHeight), 1), 0)
             
             
@@ -128,7 +128,18 @@ extension Home {
                                 .foregroundStyle(day.ignored ? .secondary : .primary)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 50)
+                                .overlay(alignment: .bottom, content: {
+                                    Circle()
+                                        .fill(.white)
+                                        .frame(width: 5, height: 5)
+                                        .opacity(Calendar.current.isDate(day.date
+                                                                         , inSameDayAs: selectedDate) ? 1 : 0)
+                                })
                                 .contentShape(.rect)
+                                .onTapGesture {
+                                    selectedDate = day.date
+                                    
+                                }
                         }
                     })
                     .frame(height: calendarGridHeight)
@@ -137,6 +148,7 @@ extension Home {
     //                .background(.blue)
                     
                 })
+                .offset(y: progress * -50)
                 
                 
                 
