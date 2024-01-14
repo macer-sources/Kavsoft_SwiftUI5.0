@@ -110,6 +110,7 @@ struct SwipeAction<Content: View>: View {
             .clipShape(.rect(cornerRadius: cornerRadius))
         })
         .allowsHitTesting(isEnabled)
+        .transition(CustomTransition())
     }
     
     private func scrollOffset(_ proxy: GeometryProxy) -> CGFloat {
@@ -152,6 +153,22 @@ struct SwipeAction<Content: View>: View {
     }
     
 }
+
+// custom transition
+struct CustomTransition: Transition {
+    func body(content: Content, phase: TransitionPhase) -> some View {
+        content.mask {
+            GeometryReader(content: { geometry in
+                let size = geometry.size
+                Rectangle()
+                    .offset(y: phase == .identity ? 0 : -size.height)
+            })
+            .containerRelativeFrame(.horizontal)
+        }
+    }
+}
+
+
 
 // swipe direction
 enum SwipeDirection {
