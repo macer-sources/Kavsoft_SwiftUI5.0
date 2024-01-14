@@ -13,12 +13,12 @@ struct Home: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            LazyVStack(content: {
+            LazyVStack(spacing: 10,content: {
                 ForEach(colors, id: \.self) { color in
                     SwipeAction(cornerRadius: 15, direction: .trailing) {
                         SimpleCardView(color)
                     } actions: {
-                        Action.init(tint: .blue, icon: "star") {
+                        Action.init(tint: .blue, icon: "star", isEnabled: color == .black) {
                             print("star")
                         }
                         Action.init(tint: .red, icon: "trash.fill") {
@@ -31,6 +31,7 @@ struct Home: View {
 
                 }
             })
+            .padding(.vertical, 15)
         }
         .scrollIndicators(.hidden)
     }
@@ -71,27 +72,44 @@ struct SwipeAction<Content: View>: View {
     private let viewID = UUID()
     
     @State private var isEnabled: Bool = true
+    @State private var scrollOffset: CGFloat = .zero
+    @Environment(\.colorScheme) private var scheme
+    
     var body: some View {
         ScrollViewReader(content: { proxy in
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: 0, content: {
                     content
+                        .rotationEffect(.init(degrees: direction == .leading ? -180 : 0))
                     // to take full available space
                         .containerRelativeFrame(.horizontal)
+                        .background(scheme == .dark ? .black: .white)
                         .background {
-                            if let firstAction = actions.first {
+                            if let firstAction = filteredActions.first {
                                 Rectangle()
                                     .fill(firstAction.tint)
+                                    .opacity(scrollOffset == .zero ? 0 : 1)
                             }
                         }
                         .id(viewID)
                         .transition(.identity)
+                        .overlay {
+                            GeometryReader {
+                                let minX = $0.frame(in: .scrollView(axis: .horizontal)).minX
+                                Color.clear
+                                    .preference(key: OffsetKey.self, value: minX)
+                                    .onPreferenceChange(OffsetKey.self) {
+                                        scrollOffset = $0
+                                    }
+                            }
+                        }
                     
                     ActionButtons {
                         withAnimation(.snappy) {
                             proxy.scrollTo(viewID, anchor: direction == .trailing ? .topLeading : .topTrailing)
                         }
                     }
+                    .opacity(scrollOffset == .zero ? 0 : 1)
                 })
                 .scrollTargetLayout()
                 .visualEffect { content, geometryProxy in
@@ -102,12 +120,14 @@ struct SwipeAction<Content: View>: View {
             .scrollIndicators(.hidden)
             .scrollTargetBehavior(.viewAligned)
             .background {
-                if let lastAction = actions.last {
+                if let lastAction = filteredActions.last {
                     Rectangle()
                         .fill(lastAction.tint)
+                        .opacity(scrollOffset == .zero ? 0 : 1)
                 }
             }
             .clipShape(.rect(cornerRadius: cornerRadius))
+            .rotationEffect(.init(degrees: direction == .leading ? 180 : 0))
         })
         .allowsHitTesting(isEnabled)
         .transition(CustomTransition())
@@ -115,7 +135,11 @@ struct SwipeAction<Content: View>: View {
     
     private func scrollOffset(_ proxy: GeometryProxy) -> CGFloat {
         let minX = proxy.frame(in: .scrollView(axis: .horizontal)).minX
-        return direction == .trailing ? (minX > 0 ? -minX : 0) : (minX < 0 ? -minX : 0)
+        return (minX > 0 ? -minX : 0)
+    }
+    
+    var filteredActions:[Action]  {
+        return actions.filter({$0.isEnabled})
     }
     
     // action button
@@ -124,10 +148,10 @@ struct SwipeAction<Content: View>: View {
         // each button will have 100 width
         Rectangle()
             .fill(.clear)
-            .frame(width: CGFloat(actions.count) * 100)
+            .frame(width: CGFloat(filteredActions.count) * 100)
             .overlay(alignment: direction.alignment) {
                 HStack(spacing: 0, content: {
-                    ForEach(actions) { button in
+                    ForEach(filteredActions) { button in
                         Button(action: {
                             Task {
                                 isEnabled = false
@@ -147,6 +171,7 @@ struct SwipeAction<Content: View>: View {
                         })
                         .buttonStyle(.plain)
                         .background(button.tint)
+                        .rotationEffect(.init(degrees: direction == .leading ? 180 : 0))
                     }
                 })
             }
@@ -168,6 +193,13 @@ struct CustomTransition: Transition {
     }
 }
 
+// offset key
+struct OffsetKey: PreferenceKey {
+    static var defaultValue: CGFloat = .zero
+    static func reduce(value: inout Value, nextValue: () -> Value) {
+        value = nextValue()
+    }
+}
 
 
 // swipe direction
