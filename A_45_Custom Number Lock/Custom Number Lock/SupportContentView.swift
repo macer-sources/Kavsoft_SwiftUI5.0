@@ -12,11 +12,11 @@ struct SupportContentView: View {
                                  isEnabled: true,
                                  lockWhenAppGoesBackground: true,
                                  safeMode: true,
-                                 interval: 30,
+                                 interval: 30,      // 这个值还不确定，没有验证通过
                                  maxTryCount: 3
     )
     var body: some View {
-        SupportLockView(lockType: .number, config: config) {
+        SupportLockView(lockType: .biometric, config: config) {
             ZStack {
                 Rectangle()
                     .fill(.blue)

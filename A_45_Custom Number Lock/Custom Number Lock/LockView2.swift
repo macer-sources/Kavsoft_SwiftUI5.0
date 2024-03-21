@@ -53,8 +53,10 @@ struct SupportLockView<Content: View>: View {
     
     @State private var currentTryCount: Int = 0     //当前尝试次数
     lazy var timer = Timer.publish(every: config.interval, on: .main, in: .common).autoconnect()
+    @State private var begingBiotricAccess = false
     
     var body: some View {
+        let _ = Self._printChanges()
         GeometryReader { proxy in
             let size = proxy.size
 
@@ -126,7 +128,7 @@ struct SupportLockView<Content: View>: View {
         }
         // Locking when app goes background
         .onChange(of: scenePhase) { oldValue, newValue in
-            if newValue != .active && config.lockWhenAppGoesBackground {
+            if newValue != .active && config.lockWhenAppGoesBackground, !begingBiotricAccess {
                 isUnlocked = false
                 pin = ""
                 currentTryCount = 0
@@ -215,16 +217,20 @@ extension SupportLockView {
         Task {
             if isBiometricAvailable &&  lockType != .number {
                 // requesting biometric unlock
+                begingBiotricAccess = true
                 if let result = try? await context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlock the View"), result {
                     withAnimation(.snappy, completionCriteria: .logicallyComplete) {
                         isUnlocked = true
                     } completion: {
                         pin = ""
                         currentTryCount = 0
+                        debugPrint("=======")
                     }
                 }else {
+                    debugPrint("===========解锁失败:\(currentTryCount)")
                     currentTryCount += 1
                     if config.safeMode,currentTryCount >= config.maxTryCount {
+                        debugPrint("===========进入安全模式")
                         isUnlocked = true
                     }
                 }
@@ -233,7 +239,7 @@ extension SupportLockView {
             // No bio metric permission || lock type must be set as keypad
             // updating biometric status
             noBiometricAccess = !isBiometricAvailable
-            
+            begingBiotricAccess = false
         }
     }
     
