@@ -1,37 +1,64 @@
 //
-//  LockView.swift
+//  LockView2.swift
 //  Custom Number Lock
 //
-//  Created by Kan Tao on 2024/1/4.
+//  Created by Kan Tao on 2024/3/21.
 //
 
 import SwiftUI
 import LocalAuthentication
 
-struct LockView<Content: View>: View {
-    var lockType: LockType
+
+
+extension SupportLockView {
+    enum LockType: String {
+        case biometric = "Bio Metric Auth" // 生物识别
+        case number = "Custom Number Lock"  // 数字键盘
+        case both = "First preference will be biometric, and if it's not available, it will go for number lock" //  两者都有
+    }
+}
+
+
+struct LockConfig {
+    var lockPin: String         // 密码
+    var isEnabled: Bool         // 是否启用功能
+    var lockWhenAppGoesBackground: Bool = false     // 进入后台锁定
+    var safeMode: Bool = false                      // 是否开启安全模式
+    var interval: TimeInterval = 0                  // 进入后台马上锁死
+    var maxTryCount: Int = 1                    // 最大尝试次数
+}
+
+
+
+struct SupportLockView<Content: View>: View {
+    var lockType: LockType      // 模式
+    var config: LockConfig
     
-    var lockPin: String
-    var isEnabled: Bool
-    var lockWhenAppGoesBackground: Bool = false
     
-    @ViewBuilder var content: Content
+    @ViewBuilder var content: Content           // 正常的
+    @ViewBuilder var safeContent: Content       // 安全界面
+    
+    
     var forgotPin:() -> Void = {}
-    @State private var pin: String = ""
+    
+    
+    @State private var pin: String = ""         // 当前输入的密码
     @State private var animateField: Bool = false
-    @State private var isUnlocked: Bool = false
+    @State private var isUnlocked: Bool = false //是否已经解锁
     
     @State private var noBiometricAccess: Bool = false
     private let context = LAContext()
     @Environment(\.scenePhase) private var scenePhase
     
     
+    @State private var currentTryCount: Int = 0     //当前尝试次数
+    lazy var timer = Timer.publish(every: config.interval, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         GeometryReader { proxy in
             let size = proxy.size
-            content.frame(width: size.width, height: size.height)
-            
-            if isEnabled && !isUnlocked {
+
+            if config.isEnabled && !isUnlocked {
                 ZStack {
                     Rectangle()
                         .fill(.black)
@@ -80,25 +107,36 @@ struct LockView<Content: View>: View {
                 }
                 .environment(\.colorScheme, .dark)
                 .transition(.offset(y: size.height + 100))
+            }else {
+                if !config.isEnabled {
+                    content.frame(width: size.width, height: size.height)
+                }else {
+                    if config.safeMode , currentTryCount >= config.maxTryCount {
+                        safeContent.frame(width: size.width, height: size.height)
+                    }else {
+                        content.frame(width: size.width, height: size.height)
+                    }
+                }
             }
         }
-        .onChange(of: isEnabled, initial: true) { oldValue, newValue in
+        .onChange(of: config.isEnabled, initial: true) { oldValue, newValue in
             if newValue {
                 unlockView()
             }
         }
         // Locking when app goes background
         .onChange(of: scenePhase) { oldValue, newValue in
-            if newValue != .active && lockWhenAppGoesBackground {
+            if newValue != .active && config.lockWhenAppGoesBackground {
                 isUnlocked = false
                 pin = ""
+                currentTryCount = 0
             }
         }
     }
 }
 
 
-extension LockView {
+extension SupportLockView {
     @ViewBuilder
     func NumberPadPinView() -> some View {
         VStack(spacing: 15, content: {
@@ -171,7 +209,7 @@ extension LockView {
  
 
 
-extension LockView {
+extension SupportLockView {
     private func unlockView() {
         // checking and unlocking view
         Task {
@@ -182,6 +220,12 @@ extension LockView {
                         isUnlocked = true
                     } completion: {
                         pin = ""
+                        currentTryCount = 0
+                    }
+                }else {
+                    currentTryCount += 1
+                    if config.safeMode,currentTryCount >= config.maxTryCount {
+                        isUnlocked = true
                     }
                 }
             }
@@ -199,7 +243,7 @@ extension LockView {
 }
 
 
-extension LockView {
+extension SupportLockView {
     @ViewBuilder
     private func CustomKeyboard() -> some View {
         GeometryReader { proxy in
@@ -251,7 +295,7 @@ extension LockView {
         .onChange(of: pin) { oldValue, newValue in
             if newValue.count == 4 {
                 // 开始验证密码正确性
-                if lockPin == pin {
+                if config.lockPin == pin {
                     print("Unlock")
                     withAnimation(.snappy,completionCriteria: .logicallyComplete) {
                         isUnlocked = true
@@ -259,24 +303,20 @@ extension LockView {
                         // clearing pin
                         pin = ""
                         noBiometricAccess = !isBiometricAvailable
+                        currentTryCount = 0
                     }
 
                 }else {
                     print("lock")
+                    pin = ""
                     animateField.toggle()
+                    currentTryCount += 1
+                    if config.safeMode,currentTryCount >= config.maxTryCount {
+                        isUnlocked = true
+                    }
                 }
             }
         }
-    }
-}
-
-
-
-extension LockView {
-    enum LockType: String {
-        case biometric = "Bio Metric Auth" // 生物识别
-        case number = "Custom Number Lock"  // 数字键盘
-        case both = "First preference will be biometric, and if it's not available, it will go for number lock" //  两者都有
     }
 }
 

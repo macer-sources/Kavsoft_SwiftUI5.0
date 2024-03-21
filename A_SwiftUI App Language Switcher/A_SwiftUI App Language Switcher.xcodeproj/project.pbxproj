@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB05A1A02B4644F600BB6093 /* Custom_Number_LockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05A19F2B4644F600BB6093 /* Custom_Number_LockApp.swift */; };
-		AB05A1A22B4644F600BB6093 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05A1A12B4644F600BB6093 /* ContentView.swift */; };
-		AB05A1A42B4644F700BB6093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB05A1A32B4644F700BB6093 /* Assets.xcassets */; };
-		AB05A1A82B4644F700BB6093 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB05A1A72B4644F700BB6093 /* Preview Assets.xcassets */; };
-		AB05A1AF2B46452200BB6093 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05A1AE2B46452200BB6093 /* LockView.swift */; };
-		AB9F34CB2BAC537D002455D7 /* LockView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34CA2BAC537D002455D7 /* LockView2.swift */; };
-		AB9F34CD2BAC589C002455D7 /* SupportContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */; };
+		AB9F349B2BAB2C34002455D7 /* A_SwiftUI_App_Language_SwitcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F349A2BAB2C34002455D7 /* A_SwiftUI_App_Language_SwitcherApp.swift */; };
+		AB9F349D2BAB2C34002455D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F349C2BAB2C34002455D7 /* ContentView.swift */; };
+		AB9F349F2BAB2C35002455D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9F349E2BAB2C35002455D7 /* Assets.xcassets */; };
+		AB9F34A22BAB2C35002455D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9F34A12BAB2C35002455D7 /* Preview Assets.xcassets */; };
+		AB9F34AC2BAB3020002455D7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB9F34AA2BAB3020002455D7 /* Localizable.strings */; };
+		AB9F34AF2BAB32D9002455D7 /* Way1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34AE2BAB32D9002455D7 /* Way1.swift */; };
+		AB9F34B12BAB32F9002455D7 /* Way2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34B02BAB32F9002455D7 /* Way2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB05A19C2B4644F600BB6093 /* Custom Number Lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Number Lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB05A19F2B4644F600BB6093 /* Custom_Number_LockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Number_LockApp.swift; sourceTree = "<group>"; };
-		AB05A1A12B4644F600BB6093 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AB05A1A32B4644F700BB6093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB05A1A52B4644F700BB6093 /* Custom_Number_Lock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Custom_Number_Lock.entitlements; sourceTree = "<group>"; };
-		AB05A1A72B4644F700BB6093 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AB05A1AE2B46452200BB6093 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
-		AB9F34CA2BAC537D002455D7 /* LockView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView2.swift; sourceTree = "<group>"; };
-		AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportContentView.swift; sourceTree = "<group>"; };
+		AB9F34972BAB2C34002455D7 /* A_SwiftUI App Language Switcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A_SwiftUI App Language Switcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9F349A2BAB2C34002455D7 /* A_SwiftUI_App_Language_SwitcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A_SwiftUI_App_Language_SwitcherApp.swift; sourceTree = "<group>"; };
+		AB9F349C2BAB2C34002455D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB9F349E2BAB2C35002455D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB9F34A12BAB2C35002455D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB9F34AB2BAB3020002455D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "A_SwiftUI App Language Switcher/en.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AB9F34AD2BAB3026002455D7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "A_SwiftUI App Language Switcher/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AB9F34AE2BAB32D9002455D7 /* Way1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Way1.swift; sourceTree = "<group>"; };
+		AB9F34B02BAB32F9002455D7 /* Way2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Way2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB05A1992B4644F600BB6093 /* Frameworks */ = {
+		AB9F34942BAB2C34002455D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,41 +39,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB05A1932B4644F600BB6093 = {
+		AB9F348E2BAB2C34002455D7 = {
 			isa = PBXGroup;
 			children = (
-				AB05A19E2B4644F600BB6093 /* Custom Number Lock */,
-				AB05A19D2B4644F600BB6093 /* Products */,
+				AB9F34AA2BAB3020002455D7 /* Localizable.strings */,
+				AB9F34992BAB2C34002455D7 /* A_SwiftUI App Language Switcher */,
+				AB9F34982BAB2C34002455D7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AB05A19D2B4644F600BB6093 /* Products */ = {
+		AB9F34982BAB2C34002455D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB05A19C2B4644F600BB6093 /* Custom Number Lock.app */,
+				AB9F34972BAB2C34002455D7 /* A_SwiftUI App Language Switcher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB05A19E2B4644F600BB6093 /* Custom Number Lock */ = {
+		AB9F34992BAB2C34002455D7 /* A_SwiftUI App Language Switcher */ = {
 			isa = PBXGroup;
 			children = (
-				AB05A19F2B4644F600BB6093 /* Custom_Number_LockApp.swift */,
-				AB05A1A12B4644F600BB6093 /* ContentView.swift */,
-				AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */,
-				AB05A1A32B4644F700BB6093 /* Assets.xcassets */,
-				AB05A1A52B4644F700BB6093 /* Custom_Number_Lock.entitlements */,
-				AB05A1A62B4644F700BB6093 /* Preview Content */,
-				AB05A1AE2B46452200BB6093 /* LockView.swift */,
-				AB9F34CA2BAC537D002455D7 /* LockView2.swift */,
+				AB9F349A2BAB2C34002455D7 /* A_SwiftUI_App_Language_SwitcherApp.swift */,
+				AB9F349C2BAB2C34002455D7 /* ContentView.swift */,
+				AB9F349E2BAB2C35002455D7 /* Assets.xcassets */,
+				AB9F34A02BAB2C35002455D7 /* Preview Content */,
+				AB9F34AE2BAB32D9002455D7 /* Way1.swift */,
+				AB9F34B02BAB32F9002455D7 /* Way2.swift */,
 			);
-			path = "Custom Number Lock";
+			path = "A_SwiftUI App Language Switcher";
 			sourceTree = "<group>";
 		};
-		AB05A1A62B4644F700BB6093 /* Preview Content */ = {
+		AB9F34A02BAB2C35002455D7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				AB05A1A72B4644F700BB6093 /* Preview Assets.xcassets */,
+				AB9F34A12BAB2C35002455D7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -81,85 +80,98 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB05A19B2B4644F600BB6093 /* Custom Number Lock */ = {
+		AB9F34962BAB2C34002455D7 /* A_SwiftUI App Language Switcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB05A1AB2B4644F700BB6093 /* Build configuration list for PBXNativeTarget "Custom Number Lock" */;
+			buildConfigurationList = AB9F34A52BAB2C35002455D7 /* Build configuration list for PBXNativeTarget "A_SwiftUI App Language Switcher" */;
 			buildPhases = (
-				AB05A1982B4644F600BB6093 /* Sources */,
-				AB05A1992B4644F600BB6093 /* Frameworks */,
-				AB05A19A2B4644F600BB6093 /* Resources */,
+				AB9F34932BAB2C34002455D7 /* Sources */,
+				AB9F34942BAB2C34002455D7 /* Frameworks */,
+				AB9F34952BAB2C34002455D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Custom Number Lock";
-			productName = "Custom Number Lock";
-			productReference = AB05A19C2B4644F600BB6093 /* Custom Number Lock.app */;
+			name = "A_SwiftUI App Language Switcher";
+			productName = "A_SwiftUI App Language Switcher";
+			productReference = AB9F34972BAB2C34002455D7 /* A_SwiftUI App Language Switcher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB05A1942B4644F600BB6093 /* Project object */ = {
+		AB9F348F2BAB2C34002455D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
-					AB05A19B2B4644F600BB6093 = {
-						CreatedOnToolsVersion = 15.1;
+					AB9F34962BAB2C34002455D7 = {
+						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
-			buildConfigurationList = AB05A1972B4644F600BB6093 /* Build configuration list for PBXProject "Custom Number Lock" */;
+			buildConfigurationList = AB9F34922BAB2C34002455D7 /* Build configuration list for PBXProject "A_SwiftUI App Language Switcher" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
-			mainGroup = AB05A1932B4644F600BB6093;
-			productRefGroup = AB05A19D2B4644F600BB6093 /* Products */;
+			mainGroup = AB9F348E2BAB2C34002455D7;
+			productRefGroup = AB9F34982BAB2C34002455D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB05A19B2B4644F600BB6093 /* Custom Number Lock */,
+				AB9F34962BAB2C34002455D7 /* A_SwiftUI App Language Switcher */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AB05A19A2B4644F600BB6093 /* Resources */ = {
+		AB9F34952BAB2C34002455D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB05A1A82B4644F700BB6093 /* Preview Assets.xcassets in Resources */,
-				AB05A1A42B4644F700BB6093 /* Assets.xcassets in Resources */,
+				AB9F34A22BAB2C35002455D7 /* Preview Assets.xcassets in Resources */,
+				AB9F34AC2BAB3020002455D7 /* Localizable.strings in Resources */,
+				AB9F349F2BAB2C35002455D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AB05A1982B4644F600BB6093 /* Sources */ = {
+		AB9F34932BAB2C34002455D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9F34CB2BAC537D002455D7 /* LockView2.swift in Sources */,
-				AB05A1A22B4644F600BB6093 /* ContentView.swift in Sources */,
-				AB05A1A02B4644F600BB6093 /* Custom_Number_LockApp.swift in Sources */,
-				AB9F34CD2BAC589C002455D7 /* SupportContentView.swift in Sources */,
-				AB05A1AF2B46452200BB6093 /* LockView.swift in Sources */,
+				AB9F34B12BAB32F9002455D7 /* Way2.swift in Sources */,
+				AB9F34AF2BAB32D9002455D7 /* Way1.swift in Sources */,
+				AB9F349D2BAB2C34002455D7 /* ContentView.swift in Sources */,
+				AB9F349B2BAB2C34002455D7 /* A_SwiftUI_App_Language_SwitcherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		AB9F34AA2BAB3020002455D7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB9F34AB2BAB3020002455D7 /* en */,
+				AB9F34AD2BAB3026002455D7 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		AB05A1A92B4644F700BB6093 /* Debug */ = {
+		AB9F34A32BAB2C35002455D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -211,16 +223,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		AB05A1AA2B4644F700BB6093 /* Release */ = {
+		AB9F34A42BAB2C35002455D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,85 +280,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		AB05A1AC2B4644F700BB6093 /* Debug */ = {
+		AB9F34A62BAB2C35002455D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Custom Number Lock/Custom_Number_Lock.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Custom Number Lock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"A_SwiftUI App Language Switcher/Preview Content\"";
 				DEVELOPMENT_TEAM = W4RKLQZZCQ;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "允许使用FaceID";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number-Lock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.A-SwiftUI-App-Language-Switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AB05A1AD2B4644F700BB6093 /* Release */ = {
+		AB9F34A72BAB2C35002455D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Custom Number Lock/Custom_Number_Lock.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Custom Number Lock/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"A_SwiftUI App Language Switcher/Preview Content\"";
 				DEVELOPMENT_TEAM = W4RKLQZZCQ;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "允许使用FaceID";
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number-Lock";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.A-SwiftUI-App-Language-Switcher";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,25 +351,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB05A1972B4644F600BB6093 /* Build configuration list for PBXProject "Custom Number Lock" */ = {
+		AB9F34922BAB2C34002455D7 /* Build configuration list for PBXProject "A_SwiftUI App Language Switcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB05A1A92B4644F700BB6093 /* Debug */,
-				AB05A1AA2B4644F700BB6093 /* Release */,
+				AB9F34A32BAB2C35002455D7 /* Debug */,
+				AB9F34A42BAB2C35002455D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB05A1AB2B4644F700BB6093 /* Build configuration list for PBXNativeTarget "Custom Number Lock" */ = {
+		AB9F34A52BAB2C35002455D7 /* Build configuration list for PBXNativeTarget "A_SwiftUI App Language Switcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB05A1AC2B4644F700BB6093 /* Debug */,
-				AB05A1AD2B4644F700BB6093 /* Release */,
+				AB9F34A62BAB2C35002455D7 /* Debug */,
+				AB9F34A72BAB2C35002455D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB05A1942B4644F600BB6093 /* Project object */;
+	rootObject = AB9F348F2BAB2C34002455D7 /* Project object */;
 }

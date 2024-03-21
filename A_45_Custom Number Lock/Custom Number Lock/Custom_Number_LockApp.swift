@@ -11,7 +11,8 @@ import SwiftUI
 struct Custom_Number_LockApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            SupportContentView()
         }
     }
 }
