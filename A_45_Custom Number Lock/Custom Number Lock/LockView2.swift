@@ -218,19 +218,17 @@ extension SupportLockView {
             if isBiometricAvailable &&  lockType != .number {
                 // requesting biometric unlock
                 begingBiotricAccess = true
+                
                 if let result = try? await context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Unlock the View"), result {
                     withAnimation(.snappy, completionCriteria: .logicallyComplete) {
                         isUnlocked = true
                     } completion: {
                         pin = ""
                         currentTryCount = 0
-                        debugPrint("=======")
                     }
                 }else {
-                    debugPrint("===========解锁失败:\(currentTryCount)")
                     currentTryCount += 1
                     if config.safeMode,currentTryCount >= config.maxTryCount {
-                        debugPrint("===========进入安全模式")
                         isUnlocked = true
                     }
                 }
