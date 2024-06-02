@@ -132,29 +132,25 @@ class PageOffsetObserver: NSObject {
     var collectionView: UICollectionView?
     var offset: CGFloat = 0
     
-    private(set) var isObserving: Bool = false
+    var isObserving: Bool {
+        return kvo != nil
+    }
     
+    private var kvo: NSKeyValueObservation?
     deinit {
         remove()
     }
     
     func observe() {
-        guard !isObserving else {return}
-        collectionView?.addObserver(self, forKeyPath: "contentOffset", context: nil)
-        isObserving = true
+        guard kvo == nil else {return}
+        kvo = collectionView?.observe(\.contentOffset, options: [.new], changeHandler: { [weak self] collectionView, value in
+            guard let self = self, let newValue = value.newValue else {return}
+            self.offset = newValue.x
+        })
     }
     
     func remove() {
-        isObserving = false
-        collectionView?.removeObserver(self, forKeyPath: "contentOffset")
-    }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        debugPrint("\(String(describing: keyPath))")
-        guard keyPath == "contentOffset" else {return}
-        if let contentOffset = (object as? UICollectionView)?.contentOffset {
-            offset = contentOffset.x
-        }
+        kvo?.invalidate()
     }
 }
 
