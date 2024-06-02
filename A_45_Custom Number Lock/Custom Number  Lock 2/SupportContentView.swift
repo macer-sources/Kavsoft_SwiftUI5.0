@@ -16,7 +16,7 @@ struct SupportContentView: View {
                                  maxTryCount: 3
     )
     var body: some View {
-        SupportLockView(lockType: .biometric, config: config) {
+        SupportLockView(lockType: .both, config: config) {
             ZStack {
                 Rectangle()
                     .fill(.blue)

@@ -12,8 +12,24 @@
 		AB05A1A42B4644F700BB6093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB05A1A32B4644F700BB6093 /* Assets.xcassets */; };
 		AB05A1A82B4644F700BB6093 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB05A1A72B4644F700BB6093 /* Preview Assets.xcassets */; };
 		AB05A1AF2B46452200BB6093 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB05A1AE2B46452200BB6093 /* LockView.swift */; };
-		AB9F34CB2BAC537D002455D7 /* LockView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34CA2BAC537D002455D7 /* LockView2.swift */; };
-		AB9F34CD2BAC589C002455D7 /* SupportContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */; };
+		ABDEFB0F2BAF1A8D00BC7D06 /* Custom_Number_PadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB0E2BAF1A8D00BC7D06 /* Custom_Number_PadApp.swift */; };
+		ABDEFB112BAF1A8D00BC7D06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB102BAF1A8D00BC7D06 /* ContentView.swift */; };
+		ABDEFB132BAF1A8E00BC7D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDEFB122BAF1A8E00BC7D06 /* Assets.xcassets */; };
+		ABDEFB162BAF1A8E00BC7D06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDEFB152BAF1A8E00BC7D06 /* Preview Assets.xcassets */; };
+		ABDEFB182BAF1A8E00BC7D06 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB172BAF1A8E00BC7D06 /* Persistence.swift */; };
+		ABDEFB1B2BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB192BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodeld */; };
+		ABDEFB202BAF217F00BC7D06 /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB1F2BAF217F00BC7D06 /* LockScreen.swift */; };
+		ABDEFB282BAF234D00BC7D06 /* Custom_Number__Lock_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB272BAF234D00BC7D06 /* Custom_Number__Lock_2App.swift */; };
+		ABDEFB2C2BAF234E00BC7D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDEFB2B2BAF234E00BC7D06 /* Assets.xcassets */; };
+		ABDEFB2F2BAF234E00BC7D06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDEFB2E2BAF234E00BC7D06 /* Preview Assets.xcassets */; };
+		ABDEFB332BAF235800BC7D06 /* SupportContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */; };
+		ABDEFB342BAF236200BC7D06 /* LockView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F34CA2BAC537D002455D7 /* LockView2.swift */; };
+		ABDEFB3C2BAF237800BC7D06 /* Custom_Number__Lock_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB3B2BAF237800BC7D06 /* Custom_Number__Lock_3App.swift */; };
+		ABDEFB3E2BAF237800BC7D06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB3D2BAF237800BC7D06 /* ContentView.swift */; };
+		ABDEFB402BAF237900BC7D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDEFB3F2BAF237900BC7D06 /* Assets.xcassets */; };
+		ABDEFB432BAF237900BC7D06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDEFB422BAF237900BC7D06 /* Preview Assets.xcassets */; };
+		ABDEFB482BAF239000BC7D06 /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB472BAF239000BC7D06 /* LockView.swift */; };
+		ABDEFB4A2BAF24DB00BC7D06 /* LockScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDEFB492BAF24DB00BC7D06 /* LockScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +42,50 @@
 		AB05A1AE2B46452200BB6093 /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		AB9F34CA2BAC537D002455D7 /* LockView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView2.swift; sourceTree = "<group>"; };
 		AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportContentView.swift; sourceTree = "<group>"; };
+		ABDEFB0C2BAF1A8D00BC7D06 /* Custom Number Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Number Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDEFB0E2BAF1A8D00BC7D06 /* Custom_Number_PadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Number_PadApp.swift; sourceTree = "<group>"; };
+		ABDEFB102BAF1A8D00BC7D06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABDEFB122BAF1A8E00BC7D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABDEFB152BAF1A8E00BC7D06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABDEFB172BAF1A8E00BC7D06 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ABDEFB1A2BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Custom_Number_Pad.xcdatamodel; sourceTree = "<group>"; };
+		ABDEFB1F2BAF217F00BC7D06 /* LockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreen.swift; sourceTree = "<group>"; };
+		ABDEFB252BAF234D00BC7D06 /* Custom Number  Lock 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Number  Lock 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDEFB272BAF234D00BC7D06 /* Custom_Number__Lock_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Number__Lock_2App.swift; sourceTree = "<group>"; };
+		ABDEFB2B2BAF234E00BC7D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABDEFB2E2BAF234E00BC7D06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABDEFB392BAF237800BC7D06 /* Custom Number  Lock 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom Number  Lock 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDEFB3B2BAF237800BC7D06 /* Custom_Number__Lock_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_Number__Lock_3App.swift; sourceTree = "<group>"; };
+		ABDEFB3D2BAF237800BC7D06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABDEFB3F2BAF237900BC7D06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABDEFB422BAF237900BC7D06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABDEFB472BAF239000BC7D06 /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		ABDEFB492BAF24DB00BC7D06 /* LockScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB05A1992B4644F600BB6093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB092BAF1A8D00BC7D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB222BAF234D00BC7D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB362BAF237800BC7D06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				AB05A19E2B4644F600BB6093 /* Custom Number Lock */,
+				ABDEFB0D2BAF1A8D00BC7D06 /* Custom Number Pad */,
+				ABDEFB262BAF234D00BC7D06 /* Custom Number  Lock 2 */,
+				ABDEFB3A2BAF237800BC7D06 /* Custom Number  Lock 3 */,
 				AB05A19D2B4644F600BB6093 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				AB05A19C2B4644F600BB6093 /* Custom Number Lock.app */,
+				ABDEFB0C2BAF1A8D00BC7D06 /* Custom Number Pad.app */,
+				ABDEFB252BAF234D00BC7D06 /* Custom Number  Lock 2.app */,
+				ABDEFB392BAF237800BC7D06 /* Custom Number  Lock 3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,12 +122,10 @@
 			children = (
 				AB05A19F2B4644F600BB6093 /* Custom_Number_LockApp.swift */,
 				AB05A1A12B4644F600BB6093 /* ContentView.swift */,
-				AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */,
 				AB05A1A32B4644F700BB6093 /* Assets.xcassets */,
 				AB05A1A52B4644F700BB6093 /* Custom_Number_Lock.entitlements */,
 				AB05A1A62B4644F700BB6093 /* Preview Content */,
 				AB05A1AE2B46452200BB6093 /* LockView.swift */,
-				AB9F34CA2BAC537D002455D7 /* LockView2.swift */,
 			);
 			path = "Custom Number Lock";
 			sourceTree = "<group>";
@@ -74,6 +134,69 @@
 			isa = PBXGroup;
 			children = (
 				AB05A1A72B4644F700BB6093 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABDEFB0D2BAF1A8D00BC7D06 /* Custom Number Pad */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEFB0E2BAF1A8D00BC7D06 /* Custom_Number_PadApp.swift */,
+				ABDEFB102BAF1A8D00BC7D06 /* ContentView.swift */,
+				ABDEFB122BAF1A8E00BC7D06 /* Assets.xcassets */,
+				ABDEFB172BAF1A8E00BC7D06 /* Persistence.swift */,
+				ABDEFB192BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodeld */,
+				ABDEFB142BAF1A8E00BC7D06 /* Preview Content */,
+				ABDEFB1F2BAF217F00BC7D06 /* LockScreen.swift */,
+			);
+			path = "Custom Number Pad";
+			sourceTree = "<group>";
+		};
+		ABDEFB142BAF1A8E00BC7D06 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEFB152BAF1A8E00BC7D06 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABDEFB262BAF234D00BC7D06 /* Custom Number  Lock 2 */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEFB272BAF234D00BC7D06 /* Custom_Number__Lock_2App.swift */,
+				AB9F34CC2BAC589C002455D7 /* SupportContentView.swift */,
+				AB9F34CA2BAC537D002455D7 /* LockView2.swift */,
+				ABDEFB2B2BAF234E00BC7D06 /* Assets.xcassets */,
+				ABDEFB2D2BAF234E00BC7D06 /* Preview Content */,
+			);
+			path = "Custom Number  Lock 2";
+			sourceTree = "<group>";
+		};
+		ABDEFB2D2BAF234E00BC7D06 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEFB2E2BAF234E00BC7D06 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABDEFB3A2BAF237800BC7D06 /* Custom Number  Lock 3 */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEFB3B2BAF237800BC7D06 /* Custom_Number__Lock_3App.swift */,
+				ABDEFB3D2BAF237800BC7D06 /* ContentView.swift */,
+				ABDEFB472BAF239000BC7D06 /* LockView.swift */,
+				ABDEFB3F2BAF237900BC7D06 /* Assets.xcassets */,
+				ABDEFB412BAF237900BC7D06 /* Preview Content */,
+				ABDEFB492BAF24DB00BC7D06 /* LockScreen.swift */,
+			);
+			path = "Custom Number  Lock 3";
+			sourceTree = "<group>";
+		};
+		ABDEFB412BAF237900BC7D06 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABDEFB422BAF237900BC7D06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -98,6 +221,57 @@
 			productReference = AB05A19C2B4644F600BB6093 /* Custom Number Lock.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ABDEFB0B2BAF1A8D00BC7D06 /* Custom Number Pad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDEFB1E2BAF1A8E00BC7D06 /* Build configuration list for PBXNativeTarget "Custom Number Pad" */;
+			buildPhases = (
+				ABDEFB082BAF1A8D00BC7D06 /* Sources */,
+				ABDEFB092BAF1A8D00BC7D06 /* Frameworks */,
+				ABDEFB0A2BAF1A8D00BC7D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom Number Pad";
+			productName = "Custom Number Pad";
+			productReference = ABDEFB0C2BAF1A8D00BC7D06 /* Custom Number Pad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABDEFB242BAF234D00BC7D06 /* Custom Number  Lock 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDEFB302BAF234E00BC7D06 /* Build configuration list for PBXNativeTarget "Custom Number  Lock 2" */;
+			buildPhases = (
+				ABDEFB212BAF234D00BC7D06 /* Sources */,
+				ABDEFB222BAF234D00BC7D06 /* Frameworks */,
+				ABDEFB232BAF234D00BC7D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom Number  Lock 2";
+			productName = "Custom Number  Lock 2";
+			productReference = ABDEFB252BAF234D00BC7D06 /* Custom Number  Lock 2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABDEFB382BAF237800BC7D06 /* Custom Number  Lock 3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABDEFB442BAF237900BC7D06 /* Build configuration list for PBXNativeTarget "Custom Number  Lock 3" */;
+			buildPhases = (
+				ABDEFB352BAF237800BC7D06 /* Sources */,
+				ABDEFB362BAF237800BC7D06 /* Frameworks */,
+				ABDEFB372BAF237800BC7D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom Number  Lock 3";
+			productName = "Custom Number  Lock 3";
+			productReference = ABDEFB392BAF237800BC7D06 /* Custom Number  Lock 3.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,11 +279,20 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					AB05A19B2B4644F600BB6093 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					ABDEFB0B2BAF1A8D00BC7D06 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					ABDEFB242BAF234D00BC7D06 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					ABDEFB382BAF237800BC7D06 = {
+						CreatedOnToolsVersion = 15.3;
 					};
 				};
 			};
@@ -127,6 +310,9 @@
 			projectRoot = "";
 			targets = (
 				AB05A19B2B4644F600BB6093 /* Custom Number Lock */,
+				ABDEFB0B2BAF1A8D00BC7D06 /* Custom Number Pad */,
+				ABDEFB242BAF234D00BC7D06 /* Custom Number  Lock 2 */,
+				ABDEFB382BAF237800BC7D06 /* Custom Number  Lock 3 */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +327,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABDEFB0A2BAF1A8D00BC7D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDEFB162BAF1A8E00BC7D06 /* Preview Assets.xcassets in Resources */,
+				ABDEFB132BAF1A8E00BC7D06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB232BAF234D00BC7D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDEFB2F2BAF234E00BC7D06 /* Preview Assets.xcassets in Resources */,
+				ABDEFB2C2BAF234E00BC7D06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB372BAF237800BC7D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDEFB432BAF237900BC7D06 /* Preview Assets.xcassets in Resources */,
+				ABDEFB402BAF237900BC7D06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,11 +361,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB9F34CB2BAC537D002455D7 /* LockView2.swift in Sources */,
 				AB05A1A22B4644F600BB6093 /* ContentView.swift in Sources */,
 				AB05A1A02B4644F600BB6093 /* Custom_Number_LockApp.swift in Sources */,
-				AB9F34CD2BAC589C002455D7 /* SupportContentView.swift in Sources */,
 				AB05A1AF2B46452200BB6093 /* LockView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB082BAF1A8D00BC7D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDEFB182BAF1A8E00BC7D06 /* Persistence.swift in Sources */,
+				ABDEFB1B2BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodeld in Sources */,
+				ABDEFB112BAF1A8D00BC7D06 /* ContentView.swift in Sources */,
+				ABDEFB202BAF217F00BC7D06 /* LockScreen.swift in Sources */,
+				ABDEFB0F2BAF1A8D00BC7D06 /* Custom_Number_PadApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB212BAF234D00BC7D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDEFB342BAF236200BC7D06 /* LockView2.swift in Sources */,
+				ABDEFB332BAF235800BC7D06 /* SupportContentView.swift in Sources */,
+				ABDEFB282BAF234D00BC7D06 /* Custom_Number__Lock_2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABDEFB352BAF237800BC7D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDEFB4A2BAF24DB00BC7D06 /* LockScreen.swift in Sources */,
+				ABDEFB3E2BAF237800BC7D06 /* ContentView.swift in Sources */,
+				ABDEFB3C2BAF237800BC7D06 /* Custom_Number__Lock_3App.swift in Sources */,
+				ABDEFB482BAF239000BC7D06 /* LockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +595,195 @@
 			};
 			name = Release;
 		};
+		ABDEFB1C2BAF1A8E00BC7D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Custom Number Pad/Preview Content\"";
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number-Pad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABDEFB1D2BAF1A8E00BC7D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Custom Number Pad/Preview Content\"";
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number-Pad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABDEFB312BAF234E00BC7D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Custom Number  Lock 2/Preview Content\"";
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number--Lock-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABDEFB322BAF234E00BC7D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Custom Number  Lock 2/Preview Content\"";
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number--Lock-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABDEFB452BAF237900BC7D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Custom Number  Lock 3/Preview Content\"";
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number--Lock-3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABDEFB462BAF237900BC7D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Custom Number  Lock 3/Preview Content\"";
+				DEVELOPMENT_TEAM = W4RKLQZZCQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.Custom-Number--Lock-3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -372,7 +805,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		ABDEFB1E2BAF1A8E00BC7D06 /* Build configuration list for PBXNativeTarget "Custom Number Pad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDEFB1C2BAF1A8E00BC7D06 /* Debug */,
+				ABDEFB1D2BAF1A8E00BC7D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDEFB302BAF234E00BC7D06 /* Build configuration list for PBXNativeTarget "Custom Number  Lock 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDEFB312BAF234E00BC7D06 /* Debug */,
+				ABDEFB322BAF234E00BC7D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABDEFB442BAF237900BC7D06 /* Build configuration list for PBXNativeTarget "Custom Number  Lock 3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDEFB452BAF237900BC7D06 /* Debug */,
+				ABDEFB462BAF237900BC7D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABDEFB192BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABDEFB1A2BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodel */,
+			);
+			currentVersion = ABDEFB1A2BAF1A8E00BC7D06 /* Custom_Number_Pad.xcdatamodel */;
+			path = Custom_Number_Pad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AB05A1942B4644F600BB6093 /* Project object */;
 }

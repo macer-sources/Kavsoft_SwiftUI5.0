@@ -68,8 +68,8 @@ struct ThemeView: View {
 
         }
         .ignoresSafeArea()
-//        .environment(\.colorScheme, selectedScheme ?? .light)
-        .preferredColorScheme(selectedScheme)
+        .environment(\.colorScheme, selectedScheme ?? .light)
+//        .preferredColorScheme(selectedScheme)
       
     }
 }
