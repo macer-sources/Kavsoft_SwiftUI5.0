@@ -56,7 +56,7 @@ fileprivate struct ToastGroup: View {
                 }
             }
             .padding(.bottom, safeArea.top == .zero ? 15 : 20)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         })
     }
     
