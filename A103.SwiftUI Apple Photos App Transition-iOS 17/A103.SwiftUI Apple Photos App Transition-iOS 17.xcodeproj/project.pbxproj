@@ -14,6 +14,11 @@
 		AA7EC2BC2D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2BB2D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17Tests.swift */; };
 		AA7EC2C62D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2C52D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITests.swift */; };
 		AA7EC2C82D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2C72D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITestsLaunchTests.swift */; };
+		AA7EC2D92D3CB2EA002558A0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2D42D3CB2EA002558A0 /* DetailView.swift */; };
+		AA7EC2DA2D3CB2EA002558A0 /* HeroLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2D52D3CB2EA002558A0 /* HeroLayer.swift */; };
+		AA7EC2DB2D3CB2EA002558A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2D62D3CB2EA002558A0 /* Item.swift */; };
+		AA7EC2DC2D3CB2EA002558A0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2D72D3CB2EA002558A0 /* Home.swift */; };
+		AA7EC2DD2D3CB2EA002558A0 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2D82D3CB2EA002558A0 /* UICoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		AA7EC2C12D3CB241002558A0 /* A103.SwiftUI Apple Photos App Transition-iOS 17UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A103.SwiftUI Apple Photos App Transition-iOS 17UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7EC2C52D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITests.swift; sourceTree = "<group>"; };
 		AA7EC2C72D3CB241002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A103_SwiftUI_Apple_Photos_App_Transition_iOS_17UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA7EC2D42D3CB2EA002558A0 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AA7EC2D52D3CB2EA002558A0 /* HeroLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroLayer.swift; sourceTree = "<group>"; };
+		AA7EC2D62D3CB2EA002558A0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AA7EC2D72D3CB2EA002558A0 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AA7EC2D82D3CB2EA002558A0 /* UICoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,11 @@
 		AA7EC2A92D3CB240002558A0 /* A103.SwiftUI Apple Photos App Transition-iOS 17 */ = {
 			isa = PBXGroup;
 			children = (
+				AA7EC2D42D3CB2EA002558A0 /* DetailView.swift */,
+				AA7EC2D52D3CB2EA002558A0 /* HeroLayer.swift */,
+				AA7EC2D72D3CB2EA002558A0 /* Home.swift */,
+				AA7EC2D62D3CB2EA002558A0 /* Item.swift */,
+				AA7EC2D82D3CB2EA002558A0 /* UICoordinator.swift */,
 				AA7EC2AA2D3CB240002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift */,
 				AA7EC2AC2D3CB240002558A0 /* ContentView.swift */,
 				AA7EC2AE2D3CB241002558A0 /* Assets.xcassets */,
@@ -257,7 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7EC2DB2D3CB2EA002558A0 /* Item.swift in Sources */,
+				AA7EC2DD2D3CB2EA002558A0 /* UICoordinator.swift in Sources */,
 				AA7EC2AD2D3CB240002558A0 /* ContentView.swift in Sources */,
+				AA7EC2DA2D3CB2EA002558A0 /* HeroLayer.swift in Sources */,
+				AA7EC2D92D3CB2EA002558A0 /* DetailView.swift in Sources */,
+				AA7EC2DC2D3CB2EA002558A0 /* Home.swift in Sources */,
 				AA7EC2AB2D3CB240002558A0 /* A103_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
