@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA7EC2EB2D3CB3B4002558A0 /* A104_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2EA2D3CB3B4002558A0 /* A104_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift */; };
+		AA7EC2ED2D3CB3B4002558A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2EC2D3CB3B4002558A0 /* ContentView.swift */; };
+		AA7EC2EF2D3CB3B5002558A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7EC2EE2D3CB3B5002558A0 /* Assets.xcassets */; };
+		AA7EC2F22D3CB3B5002558A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7EC2F12D3CB3B5002558A0 /* Preview Assets.xcassets */; };
+		AA7EC2FD2D3CB3E8002558A0 /* HeroLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2F82D3CB3E8002558A0 /* HeroLayer.swift */; };
+		AA7EC2FE2D3CB3E8002558A0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2F92D3CB3E8002558A0 /* Home.swift */; };
+		AA7EC2FF2D3CB3E8002558A0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2FA2D3CB3E8002558A0 /* DetailView.swift */; };
+		AA7EC3002D3CB3E8002558A0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2FB2D3CB3E8002558A0 /* Item.swift */; };
+		AA7EC3012D3CB3E8002558A0 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7EC2FC2D3CB3E8002558A0 /* UICoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA7EC2E72D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "A104.SwiftUI Apple Photos App Transition-iOS 17.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7EC2EA2D3CB3B4002558A0 /* A104_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A104_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift; sourceTree = "<group>"; };
+		AA7EC2EC2D3CB3B4002558A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA7EC2EE2D3CB3B5002558A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA7EC2F12D3CB3B5002558A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA7EC2F82D3CB3E8002558A0 /* HeroLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroLayer.swift; sourceTree = "<group>"; };
+		AA7EC2F92D3CB3E8002558A0 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		AA7EC2FA2D3CB3E8002558A0 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AA7EC2FB2D3CB3E8002558A0 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AA7EC2FC2D3CB3E8002558A0 /* UICoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA7EC2E42D3CB3B4002558A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA7EC2DE2D3CB3B4002558A0 = {
+			isa = PBXGroup;
+			children = (
+				AA7EC2E92D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17 */,
+				AA7EC2E82D3CB3B4002558A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA7EC2E82D3CB3B4002558A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7EC2E72D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7EC2E92D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7EC2EA2D3CB3B4002558A0 /* A104_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift */,
+				AA7EC2EC2D3CB3B4002558A0 /* ContentView.swift */,
+				AA7EC2FA2D3CB3E8002558A0 /* DetailView.swift */,
+				AA7EC2F82D3CB3E8002558A0 /* HeroLayer.swift */,
+				AA7EC2F92D3CB3E8002558A0 /* Home.swift */,
+				AA7EC2FB2D3CB3E8002558A0 /* Item.swift */,
+				AA7EC2FC2D3CB3E8002558A0 /* UICoordinator.swift */,
+				AA7EC2EE2D3CB3B5002558A0 /* Assets.xcassets */,
+				AA7EC2F02D3CB3B5002558A0 /* Preview Content */,
+			);
+			path = "A104.SwiftUI Apple Photos App Transition-iOS 17";
+			sourceTree = "<group>";
+		};
+		AA7EC2F02D3CB3B5002558A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA7EC2F12D3CB3B5002558A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA7EC2E62D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7EC2F52D3CB3B5002558A0 /* Build configuration list for PBXNativeTarget "A104.SwiftUI Apple Photos App Transition-iOS 17" */;
+			buildPhases = (
+				AA7EC2E32D3CB3B4002558A0 /* Sources */,
+				AA7EC2E42D3CB3B4002558A0 /* Frameworks */,
+				AA7EC2E52D3CB3B4002558A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "A104.SwiftUI Apple Photos App Transition-iOS 17";
+			productName = "A104.SwiftUI Apple Photos App Transition-iOS 17";
+			productReference = AA7EC2E72D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA7EC2DF2D3CB3B4002558A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AA7EC2E62D3CB3B4002558A0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = AA7EC2E22D3CB3B4002558A0 /* Build configuration list for PBXProject "A104.SwiftUI Apple Photos App Transition-iOS 17" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA7EC2DE2D3CB3B4002558A0;
+			productRefGroup = AA7EC2E82D3CB3B4002558A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA7EC2E62D3CB3B4002558A0 /* A104.SwiftUI Apple Photos App Transition-iOS 17 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA7EC2E52D3CB3B4002558A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7EC2F22D3CB3B5002558A0 /* Preview Assets.xcassets in Resources */,
+				AA7EC2EF2D3CB3B5002558A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA7EC2E32D3CB3B4002558A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7EC2ED2D3CB3B4002558A0 /* ContentView.swift in Sources */,
+				AA7EC3012D3CB3E8002558A0 /* UICoordinator.swift in Sources */,
+				AA7EC2FD2D3CB3E8002558A0 /* HeroLayer.swift in Sources */,
+				AA7EC2FE2D3CB3E8002558A0 /* Home.swift in Sources */,
+				AA7EC2FF2D3CB3E8002558A0 /* DetailView.swift in Sources */,
+				AA7EC3002D3CB3E8002558A0 /* Item.swift in Sources */,
+				AA7EC2EB2D3CB3B4002558A0 /* A104_SwiftUI_Apple_Photos_App_Transition_iOS_17App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA7EC2F32D3CB3B5002558A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA7EC2F42D3CB3B5002558A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA7EC2F62D3CB3B5002558A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"A104.SwiftUI Apple Photos App Transition-iOS 17/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.A104-SwiftUI-Apple-Photos-App-Transition-iOS-17";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA7EC2F72D3CB3B5002558A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"A104.SwiftUI Apple Photos App Transition-iOS 17/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yonglekeji.A104-SwiftUI-Apple-Photos-App-Transition-iOS-17";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA7EC2E22D3CB3B4002558A0 /* Build configuration list for PBXProject "A104.SwiftUI Apple Photos App Transition-iOS 17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7EC2F32D3CB3B5002558A0 /* Debug */,
+				AA7EC2F42D3CB3B5002558A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA7EC2F52D3CB3B5002558A0 /* Build configuration list for PBXNativeTarget "A104.SwiftUI Apple Photos App Transition-iOS 17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7EC2F62D3CB3B5002558A0 /* Debug */,
+				AA7EC2F72D3CB3B5002558A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA7EC2DF2D3CB3B4002558A0 /* Project object */;
+}
